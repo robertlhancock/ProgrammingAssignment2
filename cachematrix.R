@@ -48,8 +48,7 @@ makeCacheMatrix <- function(x = matrix()) {
   thisMatrix <<- x
   
   ## Step 2 create a setMatrix function that takes as its argument
-  ## matrix x and saves the inverse of it using solve().
-  ## ## NOTE: This method is added for completeness and testing
+  ## matrix x and saves it. Reset the inverted indicator
   setMatrix <- function(x) {
     thisMatrix <<- x
     isInvertedInd <<- FALSE
